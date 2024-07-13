@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaClone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .header .nav a:hover {
+            color: #666;
+        }
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .post {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .post .info {
+            padding: 10px;
+        }
+        .post .info .username {
+            font-weight: bold;
+            color: #333;
+        }
+        .post .info .caption {
+            font-size: 14px;
+            color: #666;
+        }
+        .post .likes {
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .post .likes span {
+            font-weight: bold;
+            color: #333;
+        }
+        .post .comments {
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .post .comments span {
+            font-weight: bold;
+            color: #333;
+        }
+        .footer {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">InstaClone</div>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Explore</a>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+        <div class="posts">
+            <div class="post">
+                <img src="https://picsum.photos/300/200" alt="Post 1">
+                <div class="info">
+                    <span class="username">john_doe</span>
+                    <span class="caption">This is a sample post</span>
+                </div>
+                <div class="likes">
+                    <span>100 likes</span>
+                </div>
+                <div class="comments">
+                    <span>20 comments</span>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://picsum.photos/300/200" alt="Post 2">
+                <div class="info">
+                    <span class="username">jane_doe</span>
+                    <span class="caption">This is another sample post</span>
+                </div>
+                <div class="likes">
+                    <span>50 likes</span>
+                </div>
+                <div class="comments">
+                    <span>10 comments</span>
+                </div>
+            </div>
+            <!-- Add more posts here -->
+        </div>
+        <div class="footer">
+            &copy; 2023 InstaClone
+        </div>
+    </div>
+
+    <script>
+        // Add event listeners to
